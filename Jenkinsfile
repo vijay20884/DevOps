@@ -1,4 +1,4 @@
-node{
+node('BDP'){
     stage('Build'){
         bat 'mvn -f C:\\git\\spring-mvc-showcase\\pom.xml install'
     }
