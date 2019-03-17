@@ -7,7 +7,7 @@ node('SLAVE1')
 	
 	stage('Move from local jenkins to git')
 	{
-		bat 'xcopy C:\\jenkins\\workspace\\Jenkins_Pipeline_Projects\\spring-mvc-showcase C:\\git\\spring-mvc-showcase'
+		bat 'xcopy C:\\jenkins\\workspace\\Jenkins_Pipeline_Projects\\mvc_showcase_build\\spring-mvc-showcase C:\\git\\spring-mvc-showcase'
     }    
 	
 	stage('Build')
