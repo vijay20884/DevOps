@@ -1,5 +1,10 @@
 node('SLAVE1')
 {
+    stage('Cleanup Workspace')
+    {
+        cleanWs()
+    }
+
     stage('Copy from Github')
 	{
 	    bat 'git clone https://github.com/spring-projects/spring-mvc-showcase'
@@ -13,11 +18,6 @@ node('SLAVE1')
 	stage('Build')
 	{
 		bat 'mvn -f C:\\git\\spring-mvc-showcase\\pom.xml install'
-    }
-
-    stage('Cleanup Workspace')
-    {
-        cleanWs()
     }
 
     stage('Downstream Project')
