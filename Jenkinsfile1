@@ -1,5 +1,5 @@
 node('SLAVE1'){
     stage('Copy Artifact to Repo'){
-        bat 'copy C:\\jenkins\\workspace\\Jenkins_Pipeline_Project\\mvc_showcase_build\\target\\spring-mvc-showcase.war C:\\JenkinsProjects\\artifacts\\'
+        bat 'copy C:\\git\\spring_mvc_showcase\\target\\spring-mvc-showcase.war C:\\JenkinsProjects\\artifacts\\'
     }
 }
