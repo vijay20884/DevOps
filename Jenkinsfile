@@ -14,7 +14,12 @@ node('SLAVE1')
 	{
 		bat 'mvn -f C:\\git\\spring-mvc-showcase\\pom.xml install'
     }
-    
+
+    stage('Cleanup Workspace')
+    {
+        cleanWs()
+    }
+
     stage('Downstream Project')
 	{
         build 'mvc_showcase_deploy'
