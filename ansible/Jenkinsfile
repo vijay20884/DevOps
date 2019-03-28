@@ -2,7 +2,7 @@ node('ubuntu_slave5')
 {
     stage('build')
     {
-        cleanWS()
+        cleanWs()
         if(isUnix())
         {
             sh 'git clone -b ${BRANCH_NAME} https://github.com/sasi9k/petclinic-infra.git'
