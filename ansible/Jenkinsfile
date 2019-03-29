@@ -1,6 +1,6 @@
 node('ubuntu_slave5')
 {
-    stage('build')
+    stage('deploy')
     {
         cleanWs()
         if(isUnix())
