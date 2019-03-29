@@ -4,7 +4,7 @@ node('ubuntu_slave5')
     {
         cleanWs()
         sh 'git clone https://github.com/spring-projects/spring-mvc-showcase'
-        sh 'cp /home/desktop5izeainc/jenkins/workspace/Jenkins_Pipeline_Projects/mvc_showcase_build_linux/spring-mvc-showcase /home/desktop5izeainc/mvn/spring-mvc-showcase'
+        sh 'cp -r /home/desktop5izeainc/jenkins/workspace/Jenkins_Pipeline_Projects/mvc_showcase_build_linux/spring-mvc-showcase /home/desktop5izeainc/mvn/spring-mvc-showcase'
         sh 'mvn -f /home/desktop5izeainc/mvn/pom.xml install'
     }
 }
