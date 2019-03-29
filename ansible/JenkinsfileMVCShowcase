@@ -1,4 +1,4 @@
-node(ubuntu_slave5')
+node('ubuntu_slave5')
 {
     stage('build')
     {
