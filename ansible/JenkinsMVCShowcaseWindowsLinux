@@ -4,6 +4,6 @@ node('SLAVE1')
     {
         cleanWs()
         bat 'git clone https://github.com/spring-projects/spring-mvc-showcase'
-        mvn -f pom.xml clean install
+        mvn -f C:\\jenkins\\workspace\\Jenkins_Pipeline_Projects\\mvc_showcase_build\\spring-mvc-showcase\\pom.xml clean install
     }
 }
