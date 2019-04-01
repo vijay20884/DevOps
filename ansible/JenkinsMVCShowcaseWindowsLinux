@@ -1,0 +1,9 @@
+node('SLAVE1')
+{
+    stage('build')
+    {
+        cleanWs()
+        bat 'git clone https://github.com/spring-projects/spring-mvc-showcase'
+        bat 'mvn -f pom.xml clean install'
+    }
+}
