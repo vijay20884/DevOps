@@ -7,7 +7,7 @@ node('SLAVE1')
         //bat 'mvn -f C:\\jenkins\\workspace\\Jenkins_Pipeline_Projects\\mvc_showcase_build\\spring-mvc-showcase\\pom.xml clean install'
         dir('spring-mvc-showcase-devops/spring-mvc-showcase-devops')
         {
-            bat 'mvn -s settings.xml clean install'
+            bat 'mvn -s settings.xml clean deploy'
         }
     }
 }
